@@ -85,155 +85,160 @@ a:active { color: #000000; text-decoration: none; }
 /* line 123, common.scss */
 #all #main .contents { width: 680px; display: block; vertical-align: top; }
 /* line 127, common.scss */
-#all #main .contents article { display: inline-block; width: 297px; padding: 0px 14px 20px 20px; }
-/* line 132, common.scss */
+#all #main .contents article { display: inline-block; width: 297px; padding: 0px 14px 20px 20px; vertical-align: top; }
+/* line 133, common.scss */
 #all #main .contents article hr { background: transparent url("../img/pattern1@2x.png") repeat 0 0; background-size: 5px 5px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
-/* line 136, common.scss */
+/* line 137, common.scss */
 #all #main .contents article .container { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; padding-top: 40px; }
-/* line 139, common.scss */
+/* line 140, common.scss */
 #all #main .contents article .container > .date { font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; font-size: 30px; margin-bottom: 20px; border-bottom: 1px solid #000000; display: inline-block; text-transform: uppercase; }
-/* line 149, common.scss */
+/* line 150, common.scss */
 #all #main .contents article .container .body img { width: 100%; }
-/* line 153, common.scss */
+/* line 154, common.scss */
 #all #main .contents article .container .body.video iframe { width: 100%; }
-/* line 157, common.scss */
+/* line 158, common.scss */
 #all #main .contents article .container .body blockquote { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; line-height: 140%; margin-bottom: 20px; }
-/* line 166, common.scss */
+/* line 167, common.scss */
 #all #main .contents article .container .images img { margin-bottom: 20px; }
-/* line 170, common.scss */
+/* line 171, common.scss */
 #all #main .contents article .container h1 { font-weight: bold; font-size: 14px; margin-bottom: 10px; }
-/* line 175, common.scss */
+/* line 176, common.scss */
 #all #main .contents article .container p { color: #333333; font-size: 12px; margin-bottom: 20px; }
-/* line 180, common.scss */
+/* line 181, common.scss */
 #all #main .contents article .container .tags { margin-bottom: 20px; font-size: 12px; }
-/* line 183, common.scss */
+/* line 184, common.scss */
 #all #main .contents article .container .tags a { opacity: 0.5; }
-/* line 187, common.scss */
+/* line 188, common.scss */
 #all #main .contents article .container footer { color: #cccccc; border-top: 1px solid #cccccc; margin-top: 10px; padding-top: 10px; font-size: 12px; display: table; clear: both; position: relative; width: 100%; }
-/* line 197, common.scss */
+/* line 198, common.scss */
 #all #main .contents article .container footer .meta { display: table-cell; vertical-align: middle; }
-/* line 200, common.scss */
+/* line 201, common.scss */
 #all #main .contents article .container footer .meta .notes { color: #cccccc; font-weight: bold; }
-/* line 205, common.scss */
+/* line 206, common.scss */
 #all #main .contents article .container footer .post-controls { display: table-cell; text-align: right; }
-/* line 214, common.scss */
+/* line 215, common.scss */
 #all #main .side { width: 279px; margin-right: 20px; display: inline-block; }
-/* line 218, common.scss */
+/* line 219, common.scss */
 #all #main .side hr { background: transparent url("../img/pattern1@2x.png") repeat 0 0; background-size: 5px 5px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
-/* line 221, common.scss */
+/* line 222, common.scss */
 #all #main .side .box { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; line-height: 140%; }
-/* line 224, common.scss */
+/* line 225, common.scss */
 #all #main .side .box:last-child { border-bottom: none; }
-/* line 228, common.scss */
+/* line 229, common.scss */
 #all #main .side .box > p { margin: 0 20px; line-height: 180%; font-size: 11px; color: #666666; }
-/* line 234, common.scss */
+/* line 235, common.scss */
 #all #main .side .box > .twitter_container { margin: 0 10px 20px; }
-/* line 237, common.scss */
+/* line 238, common.scss */
 #all #main .side .box header { margin: 0px 20px 15px; text-align: center; }
-/* line 240, common.scss */
+/* line 241, common.scss */
 #all #main .side .box header h3 { font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; font-size: 32px; margin-bottom: 5px; display: inline-block; text-align: left; }
-/* line 247, common.scss */
+/* line 248, common.scss */
 #all #main .side .box header p { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; font-size: 12px; }
-/* line 252, common.scss */
+/* line 253, common.scss */
 #all #main .side .box .fb-like-box { width: 279px; }
-/* line 255, common.scss */
+/* line 256, common.scss */
 #all #main .side .box footer { margin: 15px 20px 20px; font-size: 11px; }
-/* line 258, common.scss */
+/* line 259, common.scss */
 #all #main .side .box footer a { font-size: 11px; font-weight: bold; color: #ff7f00; }
-/* line 268, common.scss */
+/* line 269, common.scss */
 #all .pagenation { position: relative; height: 180px; }
-/* line 271, common.scss */
+/* line 272, common.scss */
 #all .pagenation hr { background: transparent url("../img/pattern0@2x.png") repeat 0 0; background-size: 4px 4px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
-/* line 275, common.scss */
+/* line 276, common.scss */
 #all .pagenation a { font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; color: #000000; font-size: 32px; }
-/* line 280, common.scss */
+/* line 281, common.scss */
 #all .pagenation .prev_next { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; position: absolute; left: 20px; top: 25px; }
-/* line 285, common.scss */
+/* line 286, common.scss */
 #all .pagenation .prev_next a { margin-right: 15px; padding-right: 15px; border-right: 1px solid #cccccc; }
-/* line 289, common.scss */
+/* line 290, common.scss */
 #all .pagenation .prev_next a:last-child { border-right: none; }
-/* line 294, common.scss */
+/* line 295, common.scss */
 #all .pagenation .back { position: absolute; right: 20px; top: 25px; }
-/* line 300, common.scss */
+/* line 301, common.scss */
 #all .follow { border-top: 1px solid #cccccc; padding: 10px 0px 10px 10px; }
-/* line 304, common.scss */
+/* line 305, common.scss */
 #all .follow ul li { display: inline-block; margin-right: 10px; }
-/* line 310, common.scss */
+/* line 311, common.scss */
 #all #global_footer { position: relative; height: 142px; margin-bottom: 100px; }
-/* line 314, common.scss */
+/* line 315, common.scss */
 #all #global_footer hr { background: transparent url("../img/pattern1@2x.png") repeat 0 0; background-size: 5px 5px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
-/* line 319, common.scss */
+/* line 320, common.scss */
 #all #global_footer .copyright { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; position: absolute; left: 0px; top: 10px; color: #000000; font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; font-size: 24px; }
-/* line 329, common.scss */
+/* line 330, common.scss */
 #all #global_footer .links { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; position: absolute; right: 0px; top: 10px; }
-/* line 334, common.scss */
+/* line 335, common.scss */
 #all #global_footer .links li { display: block; margin-left: 0px; }
-/* line 338, common.scss */
+/* line 339, common.scss */
 #all #global_footer .links li a { color: #000000; font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; font-size: 24px; }
 
-/* line 351, common.scss */
+/* line 352, common.scss */
 .post-controls { display: table-cell; vertical-align: middle; }
-/* line 354, common.scss */
+/* line 355, common.scss */
 .post-controls > ul { float: right; margin-right: 0px; }
-/* line 357, common.scss */
+/* line 358, common.scss */
 .post-controls > ul > li { float: left; height: 28px; position: relative; width: 40px; }
-/* line 362, common.scss */
+/* line 363, common.scss */
 .post-controls > ul > li:first-child { border-left: none; }
-/* line 365, common.scss */
+/* line 366, common.scss */
 .post-controls > ul > li a { display: block; height: 21px; margin: 4px auto auto; text-decoration: none; }
-/* line 371, common.scss */
+/* line 372, common.scss */
 .post-controls > ul > li .share { background: transparent url("../img/icon_share@2x.png") no-repeat 0 0; background-size: 23px 20px; width: 23px; height: 20px; margin-top: 2px; opacity: 0.355; }
-/* line 378, common.scss */
+/* line 379, common.scss */
 .post-controls > ul > li .share:hover { opacity: 0.455; }
-/* line 382, common.scss */
+/* line 383, common.scss */
 .post-controls > ul > li .reblog_button { margin: 3px 10px 0; opacity: 0.355; }
-/* line 385, common.scss */
+/* line 386, common.scss */
 .post-controls > ul > li .reblog_button :hover { opacity: 0.455; }
-/* line 389, common.scss */
+/* line 390, common.scss */
 .post-controls > ul > li .like_button { display: block; height: 20px; margin: 3px auto auto; width: 21px; opacity: 0.355; position: relative; }
-/* line 396, common.scss */
+/* line 397, common.scss */
 .post-controls > ul > li .like_button:hover { opacity: 0.455; }
-/* line 399, common.scss */
+/* line 400, common.scss */
 .post-controls > ul > li .like_button.interacted.liked:after { content: '\e601'; color: #cd1828; font-family: 'optica-icons', 'Blank'; font-size: 70px; height: 40px; width: 40px; -webkit-animation: wiggle 0.6s ease-out; -o-animation: wiggle 0.6s ease-out; -ms-animation: wiggle 0.6s ease-out; -moz-animation: wiggle 0.6s ease-out; animation: wiggle 0.6s ease-out; position: absolute; margin-top: -75px; left: -26px; z-index: 0; opacity: 0; speak: none; -webkit-transform-origin: 100% 100%; -o-transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; transform-origin: 100% 100%; }
-/* line 423, common.scss */
+/* line 424, common.scss */
 .post-controls > ul > li .like_button.liked { opacity: 1; }
-/* line 426, common.scss */
+/* line 427, common.scss */
 .post-controls > ul > li .like_button iframe { position: relative; z-index: 1; vertical-align: top; }
 
-/* line 435, common.scss */
+/* line 436, common.scss */
 .pop-menu { display: none; background: #fff; border-radius: 4px; position: absolute; bottom: 35px; left: -54px; width: 146px; -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); z-index: 10; }
-/* line 447, common.scss */
+/* line 448, common.scss */
 .pop-menu ul { float: none; margin: 0 !important; padding: 0; text-align: left; }
-/* line 452, common.scss */
+/* line 453, common.scss */
 .pop-menu ul li { border-left: none; float: none; height: auto; position: relative; width: auto; }
-/* line 458, common.scss */
+/* line 459, common.scss */
 .pop-menu ul li.search { border-bottom: 1px solid #eee; }
-/* line 461, common.scss */
+/* line 462, common.scss */
 .pop-menu ul li:not(.no-hover):hover { background: #e6eff7; }
-/* line 464, common.scss */
+/* line 465, common.scss */
 .pop-menu ul li:last-child { border-bottom: none; }
-/* line 467, common.scss */
+/* line 468, common.scss */
 .pop-menu ul li::last-child:hover { border-radius: 0 0 4px 4px; }
-/* line 470, common.scss */
+/* line 471, common.scss */
 .pop-menu ul li:last-child:hover:after { background: #e6eff7; }
-/* line 473, common.scss */
+/* line 474, common.scss */
 .pop-menu ul li:first-child { border-top: none; }
-/* line 476, common.scss */
+/* line 477, common.scss */
 .pop-menu ul li a { background: none; color: #444; display: block; font-size: 14px; height: auto; margin: 0; padding: 6px 10px 6px 10px; position: relative; text-decoration: none; width: auto; }
-/* line 487, common.scss */
+/* line 488, common.scss */
 .pop-menu ul li a .icon-arrow_carrot_right { font-size: 11px; position: absolute; right: 8px; top: 50%; margin-top: -1px; }
-/* line 497, common.scss */
+/* line 498, common.scss */
 .pop-menu.show { display: block; opacity: 0; }
-/* line 501, common.scss */
+/* line 502, common.scss */
 .pop-menu.active { opacity: 1; }
 
-/* line 506, common.scss */
+/* line 507, common.scss */
 .share-menu { bottom: 30px; }
-/* line 508, common.scss */
+/* line 509, common.scss */
 .share-menu.active { bottom: 35px; }
-/* line 513, common.scss */
+/* line 514, common.scss */
 .share-menu ul li.open-in-app { display: none; }
-/* line 516, common.scss */
+/* line 517, common.scss */
 .share-menu ul li a { opacity: 1; }
-/* line 518, common.scss */
+/* line 519, common.scss */
 .share-menu ul li a:hover { opacity: 1; }
+
+/* line 529, common.scss */
+body.page-permalink .contents { width: 620px; padding-right: 60px; }
+/* line 532, common.scss */
+body.page-permalink .contents .post { width: 100%; }
