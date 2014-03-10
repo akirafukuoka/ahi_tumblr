@@ -85,37 +85,37 @@ a:active { color: #000000; text-decoration: none; }
 /* line 123, common.scss */
 #all #main .contents { width: 680px; display: block; vertical-align: top; }
 /* line 127, common.scss */
-#all #main .contents article { display: inline-block; width: 297px; padding: 0px 14px 20px 20px; vertical-align: top; }
+#all #main .contents .post { display: inline-block; width: 297px; padding: 0px 14px 20px 20px; vertical-align: top; }
 /* line 133, common.scss */
-#all #main .contents article hr { background: transparent url("../img/pattern1@2x.png") repeat 0 0; background-size: 5px 5px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
+#all #main .contents .post hr { background: transparent url("../img/pattern1@2x.png") repeat 0 0; background-size: 5px 5px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
 /* line 137, common.scss */
-#all #main .contents article .container { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; padding-top: 40px; }
+#all #main .contents .post .container { background: transparent url("../img/block0@2x.png") no-repeat 0 16px; background-size: 86px 7px; padding-top: 60px; padding-top: 40px; }
 /* line 140, common.scss */
-#all #main .contents article .container > .date { font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; font-size: 30px; margin-bottom: 20px; border-bottom: 1px solid #000000; display: inline-block; text-transform: uppercase; }
+#all #main .contents .post .container > .date { font-family: 'Text Me One', sans-serif; line-height: 1.2em; letter-spacing: 0.2em; font-size: 30px; margin-bottom: 20px; border-bottom: 1px solid #000000; display: inline-block; text-transform: uppercase; }
 /* line 150, common.scss */
-#all #main .contents article .container .body img { width: 100%; }
+#all #main .contents .post .container .body img { width: 100%; }
 /* line 154, common.scss */
-#all #main .contents article .container .body.video iframe { width: 100%; }
+#all #main .contents .post .container .body.video iframe { width: 100%; }
 /* line 158, common.scss */
-#all #main .contents article .container .body blockquote { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; line-height: 140%; margin-bottom: 20px; }
+#all #main .contents .post .container .body blockquote { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; line-height: 140%; margin-bottom: 20px; }
 /* line 167, common.scss */
-#all #main .contents article .container .images img { margin-bottom: 20px; }
+#all #main .contents .post .container .images img { margin-bottom: 20px; }
 /* line 171, common.scss */
-#all #main .contents article .container h1 { font-weight: bold; font-size: 14px; margin-bottom: 10px; }
+#all #main .contents .post .container h1 { font-weight: bold; font-size: 14px; margin-bottom: 10px; }
 /* line 176, common.scss */
-#all #main .contents article .container p { color: #333333; font-size: 12px; margin-bottom: 20px; }
+#all #main .contents .post .container p { color: #333333; font-size: 12px; margin-bottom: 20px; }
 /* line 181, common.scss */
-#all #main .contents article .container .tags { margin-bottom: 20px; font-size: 12px; }
+#all #main .contents .post .container .tags { margin-bottom: 20px; font-size: 12px; }
 /* line 184, common.scss */
-#all #main .contents article .container .tags a { opacity: 0.5; }
+#all #main .contents .post .container .tags a { opacity: 0.5; }
 /* line 188, common.scss */
-#all #main .contents article .container footer { color: #cccccc; border-top: 1px solid #cccccc; margin-top: 10px; padding-top: 10px; font-size: 12px; display: table; clear: both; position: relative; width: 100%; }
+#all #main .contents .post .container footer { color: #cccccc; border-top: 1px solid #cccccc; margin-top: 10px; padding-top: 10px; font-size: 12px; display: table; clear: both; position: relative; width: 100%; }
 /* line 198, common.scss */
-#all #main .contents article .container footer .meta { display: table-cell; vertical-align: middle; }
+#all #main .contents .post .container footer .meta { display: table-cell; vertical-align: middle; }
 /* line 201, common.scss */
-#all #main .contents article .container footer .meta .notes { color: #cccccc; font-weight: bold; }
+#all #main .contents .post .container footer .meta .notes { color: #cccccc; font-weight: bold; }
 /* line 206, common.scss */
-#all #main .contents article .container footer .post-controls { display: table-cell; text-align: right; }
+#all #main .contents .post .container footer .post-controls { display: table-cell; text-align: right; }
 /* line 215, common.scss */
 #all #main .side { width: 279px; margin-right: 20px; display: inline-block; }
 /* line 219, common.scss */
@@ -238,7 +238,7 @@ a:active { color: #000000; text-decoration: none; }
 /* line 519, common.scss */
 .share-menu ul li a:hover { opacity: 1; }
 
-/* line 529, common.scss */
-body.page-permalink .contents { width: 620px; padding-right: 60px; }
-/* line 532, common.scss */
-body.page-permalink .contents .post { width: 100%; }
+/* line 531, common.scss */
+body.page-permalink #all #main .contents { width: 620px; padding-right: 60px; }
+/* line 534, common.scss */
+body.page-permalink #all #main .contents .post { width: 100%; }
