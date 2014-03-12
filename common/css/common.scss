@@ -4,7 +4,7 @@
 @import "bases/mixins";
 
 body {
-  @include sans-selif;
+  @include sans-serif;
   line-height: 140%;
   font-size: 14px;
   .test {
@@ -21,13 +21,26 @@ p {
   padding: 0 20px;
 }
 
+::selection {
+  background: $orange;
+}
+::-moz-selection {
+  background: $orange;
+}
+
 a {
   text-decoration: none;
   color: #000000;
 }
 a:hover {
-  color: #000000;
+  color: rgba(0,0,0,0);
+  h1, h3, p, span {
+    color: rgba(0,0,0,0);
+    background: none;
+  }
   text-decoration: none;
+  background: transparent url("../img/pattern2@2x.gif") repeat 0 0;
+  background-size: 7px 7px;
 }
 a:active {
   color: #000000;
@@ -48,14 +61,17 @@ a:active {
       left: 18px;
       top: 20px;
       @include block0;
-      h1 {
-        @include css-sprite;
-        width: 235px;
-        height: 121px;
-        display: inline-block;
-        background: url("../img/logo@2x.png") no-repeat 0 0;
-        background-size: 235px 121px;
-        //margin: 10px 0 0 18px;
+      a {
+        display: block;
+        h1 {
+          @include css-sprite;
+          width: 235px;
+          height: 121px;
+          display: inline-block;
+          background: url("../img/logo@2x.png") no-repeat 0 0;
+          background-size: 235px 121px;
+          //margin: 10px 0 0 18px;
+        }
       }
     }
 
@@ -69,16 +85,21 @@ a:active {
         li {
           display: inline-block;
           border-right: 1px solid $gray;
-          padding-right: 22px;
-          margin-right: 20px;
+
+          &:first-child {
+            margin-left: -20px;
+          }
           &:last-child {
             border-right:none;
           }
           a {
             color: #000000;
+            display: block;
+            padding-left: 20px;
+            padding-right: 20px;
           }
-          .selif {
-            @include selif;
+          .serif {
+            @include serif;
             font-weight: bold;
             font-size: 14px;
             margin-bottom: 5px;
@@ -124,24 +145,51 @@ a:active {
       width: 680px;
       display: block;
       vertical-align: top;
-      article {
+      .post {
         display: inline-block;
         width: 297px;
         padding: 0px 14px 20px 20px;
-        float: left;
+        vertical-align: top;
 
         hr {
           @include border1;
         }
 
         .container {
-          @include block0;
+          @include block1;
           padding-top: 40px;
           > .date {
             @include condenced;
-            font-size: 32px;
+            font-size: 30px;
             margin-bottom: 20px;
+            display: inline-block;
+            text-transform: uppercase;
           }
+
+          .body {
+            img {
+              width: 100%;
+            }
+            iframe {
+              width:100%;
+            }
+            a {
+              text-decoration: underline;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            &.video {
+
+            }
+            blockquote {
+              @include serif;
+              line-height: 140%;
+              margin-bottom: 20px;
+            }
+          }
+
+
           .images {
             img {
               margin-bottom: 20px;
@@ -200,7 +248,7 @@ a:active {
         }
       .box {
 
-        @include block0;
+        @include block1;
         &:last-child{
           border-bottom: none;
         }
@@ -217,6 +265,9 @@ a:active {
         header {
           margin: 0px 20px 15px;
           text-align: center;
+          a {
+            display: block;
+          }
           h3 {
             @include condenced;
             font-size: 32px;
@@ -225,9 +276,12 @@ a:active {
             text-align: left;
           }
           p {
-            @include selif;
+            @include serif;
             font-size: 12px;
           }
+        }
+        .fb-like-box {
+          width: 279px;
         }
         footer {
           margin: 15px 20px 20px;
@@ -251,20 +305,23 @@ a:active {
 
     a {
       @include condenced;
-      color: #000000;
       font-size: 32px;
     }
     .prev_next {
-      @include block0;
+      @include block2;
       position:absolute;
       left: 20px;
       top: 25px;
       a {
-        margin-right: 15px;
+        padding-left: 15px;
         padding-right: 15px;
         border-right: 1px solid $gray;
         &:last-child{
           border-right: none;
+        }
+        &.current-page {
+          background: transparent url("../img/pattern1@2x.png") repeat 0 0;
+          background-size: 5px 5px;
         }
       }
     }
@@ -294,7 +351,7 @@ a:active {
 
 
     .copyright {
-      @include block0;
+      @include block3;
       position:absolute;
       left: 0px;
       top: 10px;
@@ -313,7 +370,6 @@ a:active {
 
         margin-left: 0px;
         a {
-          color: #000000;
           @include condenced;
           font-size: 24px;
         }
@@ -323,127 +379,7 @@ a:active {
 }
 
 
-.pop-menu {
-  display: none;
-  background: #fff;
-  border-radius: 4px;
-  position: absolute;
-  bottom: 35px;
-  left: -54px;
-  width: 146px;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  z-index: 10;
-  ul {
-    float: none;
-    margin: 0 !important;
-    padding: 0;
-    li {
-      border-left: none;
-      float: none;
-      height: auto;
-      position: relative;
-      width: auto;
-      &.search {
-        border-bottom: 1px solid #eee;
-      }
-    }
-    &:not(.no-hover):hover {
-      background: #e6eff7;
-    }
-    &:first-child:hover {
-      border-radius: 4px 4px 0 0;
-    }
-    &:last-child {
-      border-bottom: none;
-    }
-    &::last-child:hover {
-      border-radius: 0 0 4px 4px;
-    }
-    &:last-child:hover:after {
-      background: #e6eff7;
-    }
-    &:first-child {
-      border-top: none;
-    }
-    a {
-      background: none;
-      color: #444;
-      display: block;
-      font-size: 14px;
-      font-weight: bold;
-      height: auto;
-      margin: 0;
-      padding: 6px 40px 6px 10px;
-      position: relative;
-      text-decoration: none;
-      width: auto;
-      .icon-arrow_carrot_right {
-        font-size: 11px;
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        transform: translateY(-50%);
-        margin-top: -1px;
-      }
-    }
-  }
-  &.show {
-    display: block;
-    opacity: 0;
-    -webkit-transition: all 0.25s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    -o-transition: all 0.25s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    -ms-transition: all 0.25s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    -moz-transition: all 0.25s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    transition: all 0.25s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-  }
-  &.active {
-    opacity: 1;
-  }
-  &.south {
-    li:last-child:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      bottom: -6px;
-      height: 12px;
-      width: 12px;
-      margin-left: -6px;
-      background-color: #fff;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      @include box-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
-    }
-  }
-}
 
-.share-menu {
-  bottom: 30px;
-  &.active {
-    bottom: 35px;
-  }
-  ul {
-    li {
-      &.open-in-app {
-        display: none;
-      }
-      a {
-        opacity: 1;
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
 
 .post-controls {
   display: table-cell;
@@ -464,7 +400,6 @@ a:active {
         height: 21px;
         margin: 4px auto auto;
         text-decoration: none;
-        width: 21px;
       }
       .share {
         background: transparent url("../img/icon_share@2x.png") no-repeat 0 0;
@@ -529,6 +464,223 @@ a:active {
       }
     }
   }
+}
+.pop-menu {
+  display: none;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 35px;
+  left: 0px;
+  width: 146px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  ul {
+    float: none;
+    margin: 0 !important;
+    padding: 0;
+    text-align: left;
+    li {
+      border-left: none;
+      float: none;
+      height: auto;
+      position: relative;
+      width: auto;
+      &.search {
+        border-bottom: 1px solid #eee;
+      }
+      &:not(.no-hover):hover {
+        background: #e6eff7;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &::last-child:hover {
+        border-radius: 0 0 4px 4px;
+      }
+      &:last-child:hover:after {
+        background: #e6eff7;
+      }
+      &:first-child {
+        border-top: none;
+      }
+      a {
+        background: none;
+        color: #444;
+        display: block;
+        font-size: 14px;
+        height: auto;
+        margin: 0;
+        padding: 6px 10px 6px 10px;
+        position: relative;
+        text-decoration: none;
+        width: auto;
+        .icon-arrow_carrot_right {
+          font-size: 11px;
+          position: absolute;
+          right: 8px;
+          top: 50%;
+          margin-top: -1px;
+        }
+      }
+    }
+  }
+  &.show {
+    display: block;
+    opacity: 0;
+  }
+  &.active {
+    opacity: 1;
+  }
+}
+
+.share-menu {
+  bottom: 30px;
+  &.active {
+    bottom: 35px;
+  }
+  ul {
+    li {
+      &.open-in-app {
+        display: none;
+      }
+      a {
+        opacity: 1;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+body.page-permalink {
+  #all {
+    #main {
+      .contents {
+        width:620px;
+        padding-right: 60px;
+        .post {
+          width: 100%;
+          .container {
+            >.date {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.page- {
+  .post-controls {
+    display: none;
+  }
+  .pagenation {
+    display: none;
+  }
+
+  #all {
+    #main {
+      .post {
+        .container {
+          header {
+            h1 {
+              @include serif;
+              font-size: 30px;
+            }
+            margin-top: 20px;
+            margin-bottom: 60px;
+          }
+          #mission {
+            h3 {
+              @include serif;
+              font-size: 42px;
+              margin-bottom: 14px;
+              font-weight: bold;
+              margin-bottom: 40px;
+            }
+            figure {
+              display: inline-block;
+              vertical-align: top;
+              text-align: center;
+              width: 240px;
+              img {
+                width: 240px;
+              }
+              .position {
+                @include serif;
+                font-size: 14px;
+                margin-bottom: 10px;
+              }
+              .name {
+                @include serif;
+                font-size: 18px;
+              }
+            }
+            .message {
+              display: inline-block;
+              width: 340px;
+              vertical-align: top;
+              margin-right: 20px;
+              p {
+                line-height: 180%;
+                font-size: 14px;
+              }
+            }
+          }
+          #officer {
+            >ul {
+              >li {
+                border-top: 1px solid $gray;
+                margin-top:20px;
+                padding-top: 20px;
+                .icon {
+                  display: inline-block;
+                  vertical-align: top;
+                  margin-right: 20px;
+                  img {
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+                .profile {
+                  display: inline-block;
+                  vertical-align: top;
+                  width: 500px;
+                  .position {
+                    @include serif;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                  }
+                  h3 {
+                    font-size: 30px;
+                    margin-bottom: 14px;
+                    font-weight: bold;
+                  }
+                  .group {
+                  }
+                  .links {
+                    a {
+                      padding: 0 5px;
+                      border-right: 1px solid $gray;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
 #statics.index {

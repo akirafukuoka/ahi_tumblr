@@ -1,7 +1,7 @@
-@mixin selif {
+@mixin serif {
   font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif;
 }
-@mixin sans-selif {
+@mixin sans-serif {
   font-family: AvenirNext-Roman, "YuGothic", YuGothic, "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 }
 @mixin condenced {
@@ -99,6 +99,21 @@
 @mixin block0 {
   background: transparent url("../img/block0@2x.png") no-repeat 0 16px;
   background-size: 86px 7px;
+  padding-top: 60px;
+}
+@mixin block1 {
+  background: transparent url("../img/block1@2x.png") no-repeat 0 16px;
+  background-size: 86px 8px;
+  padding-top: 60px;
+}
+@mixin block2 {
+  background: transparent url("../img/block2@2x.png") no-repeat 0 16px;
+  background-size: 88px 7px;
+  padding-top: 60px;
+}
+@mixin block3 {
+  background: transparent url("../img/block3@2x.png") no-repeat 0 16px;
+  background-size: 96px 7px;
   padding-top: 60px;
 }
 
