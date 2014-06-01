@@ -2,6 +2,7 @@
 @import "compass/reset/";
 @import "bases/vars";
 @import "bases/mixins";
+@import "bases/keyframes";
 
 body {
   @include sans-serif;
@@ -52,32 +53,36 @@ a:active {
   margin: 0px auto;
   #global_header {
     position: relative;
-    height: 230px;
+    height: 200px;
     hr {
       @include border0;
     }
     .title {
       position: absolute;
       left: 18px;
-      top: 20px;
-      @include block0;
+      top: 34px;
       a {
         display: block;
         h1 {
           @include css-sprite;
-          width: 235px;
-          height: 121px;
+          width: 160px;
+          height: 128px;
           display: inline-block;
-          background: url("../img/logo@2x.png") no-repeat 0 0;
-          background-size: 235px 121px;
+          background: url("../img/logo_new@2x.png") no-repeat center center;
+          background-size: 120px 127px;
           //margin: 10px 0 0 18px;
+        }
+        &:hover {
+          h1 {
+            background: none;
+          }
         }
       }
     }
 
     nav {
       position: absolute;
-      left: 350px;
+      left: 200px;
       top: 20px;
       @include block0;
       ul {
@@ -87,7 +92,7 @@ a:active {
           border-right: 1px solid $gray;
 
           &:first-child {
-            margin-left: -20px;
+            //margin-left: -20px;
           }
           &:last-child {
             border-right:none;
@@ -95,11 +100,11 @@ a:active {
           a {
             color: #000000;
             display: block;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
           }
           .serif {
-            @include serif;
+            //@include serif;
             font-weight: bold;
             font-size: 14px;
             margin-bottom: 5px;
@@ -107,6 +112,16 @@ a:active {
           .en {
             @include condenced;
             font-size: 10px;
+          }
+        }
+        &.social {
+          margin-top: 10px;
+          border-top: 1px solid #CCCCCC;
+          padding-top: 10px;
+          li {
+            .en {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -125,17 +140,28 @@ a:active {
       }
     }
   }
-  #heros {
-    height: 200px;
+
+
+  #heroes {
+    height: 140px;
     margin-bottom: 40px;
     .inner {
       .img1 {
         background: transparent url("../img/pattern2@2x.png") repeat 0 0;
         background-size: 35px 35px;
-        height: 200px;
+        background-position: 0px 0px;
+        height: 140px;
+        @include experimental(animation-name, heroes_animation);
+        @include experimental(animation-duration, 1.0s); //実行時間
+        @include experimental(animation-iteration-count, infinite); //実行回数(number | infinite)
+        @include experimental(animation-direction, normal); //反復の有無(normal | alternate)
+        @include experimental(animation-delay, 0s); //実行までの待ち時間
+        @include experimental(animation-fill-mode, both);//実行前や実行後のスタイル指定(none | forwards | backwards | both)
+        @include experimental(animation-timing-function, linear);//タイミング(ease | liner | ease-in | ease-out | ease-in-out | cubic-bezier)
       }
     }
   }
+
 
   #main {
     width: 100%;
@@ -167,6 +193,7 @@ a:active {
           }
 
           .body {
+            margin-bottom: 20px;
             img {
               width: 100%;
             }
@@ -205,11 +232,23 @@ a:active {
             font-size: 12px;
             margin-bottom: 20px;
           }
+          .content_source {
+            margin-bottom: 20px;
+            a {
+              color: #CCCCCC;
+              &:hover {
+                color: rgba(0,0,0,0);
+              }
+            }
+          }
           .tags {
             margin-bottom: 20px;
             font-size: 12px;
             a {
-              opacity: 0.5;
+              color: #CCCCCC;
+              &:hover {
+                color: rgba(0,0,0,0);
+              }
             }
           }
           footer {
@@ -321,7 +360,7 @@ a:active {
         }
         &.current-page {
           background: transparent url("../img/pattern1@2x.png") repeat 0 0;
-          background-size: 5px 5px;
+          background-size: 4px 4px;
         }
       }
     }
@@ -577,9 +616,6 @@ body.page-permalink {
 }
 
 body.page- {
-  .post-controls {
-    display: none;
-  }
   .pagenation {
     display: none;
   }
@@ -590,11 +626,21 @@ body.page- {
         .container {
           header {
             h1 {
-              @include serif;
+              //@include serif;
               font-size: 30px;
             }
             margin-top: 20px;
             margin-bottom: 60px;
+          }
+          footer {
+            .post-controls {
+              display: none;
+            }
+          }
+          .body {
+            img {
+              width: auto;
+            }
           }
           #mission {
             h3 {
@@ -604,22 +650,23 @@ body.page- {
               font-weight: bold;
               margin-bottom: 40px;
             }
-            figure {
+            .figure {
               display: inline-block;
               vertical-align: top;
               text-align: center;
               width: 240px;
               img {
                 width: 240px;
+                margin-bottom: 10px;
               }
               .position {
                 @include serif;
-                font-size: 14px;
-                margin-bottom: 10px;
+                font-size: 10px;
+                margin-bottom: 4px;
               }
               .name {
-                @include serif;
-                font-size: 18px;
+                //@include serif;
+                font-size: 14px;
               }
             }
             .message {
@@ -685,4 +732,13 @@ body.page- {
 
 #statics.index {
 
+}
+
+@include keyframes(heroes_animation) {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 35px 35px;
+  }
 }
