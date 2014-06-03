@@ -265,8 +265,13 @@ a:active {
               display: table-cell;
               vertical-align: middle;
               .notes {
-                color: $gray;
                 font-weight: bold;
+                padding: 5px;
+                background:$gray;
+                color: #FFFFFF;
+                border-radius: 4px;
+                font-size: 10px;
+                margin-right: 5px;
               }
             }
             .post-controls {
