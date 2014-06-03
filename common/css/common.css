@@ -238,7 +238,7 @@ a:active { color: #000000; text-decoration: none; }
 /* line 431, common.scss */
 .post-controls > ul { float: right; margin-right: 0px; }
 /* line 434, common.scss */
-.post-controls > ul > li { float: left; height: 28px; position: relative; width: 40px; }
+.post-controls > ul > li { float: left; height: 28px; position: relative; width: 36px; }
 /* line 439, common.scss */
 .post-controls > ul > li:first-child { border-left: none; }
 /* line 442, common.scss */
