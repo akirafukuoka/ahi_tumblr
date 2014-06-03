@@ -248,9 +248,9 @@ a:active { color: #000000; text-decoration: none; }
 /* line 450, common.scss */
 .post-controls > ul > li .share:hover { opacity: 0.455; }
 /* line 454, common.scss */
-.post-controls > ul > li .facebook { width: auto; margin-left: 5px; height: 20px; padding-top: 4px; }
+.post-controls > ul > li.facebook { width: auto; margin-left: 5px; height: 20px; padding-top: 4px; }
 /* line 460, common.scss */
-.post-controls > ul > li .twitter { width: auto; margin-left: 5px; height: 20px; padding-top: 4px; }
+.post-controls > ul > li.twitter { width: auto; margin-left: 5px; height: 20px; padding-top: 4px; }
 /* line 466, common.scss */
 .post-controls > ul > li .reblog_button { margin: 3px 10px 0; opacity: 0.355; }
 /* line 469, common.scss */
