@@ -129,7 +129,7 @@ a:active { color: #000000; text-decoration: none; }
 /* line 170, common.scss */
 #all #main .contents { width: 680px; display: block; vertical-align: top; }
 /* line 174, common.scss */
-#all #main .contents .post { display: inline-block; width: 297px; padding: 0px 14px 20px 20px; vertical-align: top; }
+#all #main .contents .post { display: inline-block; width: 297px; padding: 0px 9px 20px 20px; vertical-align: top; }
 /* line 180, common.scss */
 #all #main .contents .post hr { background: transparent url("../img/pattern1@2x.png") repeat 0 0; background-size: 4px 4px; width: 100%; height: 12px; display: block; border: none; margin: 0; padding: 0; }
 /* line 184, common.scss */
@@ -353,48 +353,48 @@ body.page- #all #main .post .container .body img { width: auto; }
 /* line 741, common.scss */
 body.page- #all #main .post .container #mission h3 { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; font-size: 42px; margin-bottom: 14px; font-weight: bold; margin-bottom: 40px; }
 /* line 748, common.scss */
-body.page- #all #main .post .container #mission .figure { display: inline-block; vertical-align: top; text-align: center; width: 240px; }
-/* line 753, common.scss */
-body.page- #all #main .post .container #mission .figure img { width: 240px; margin-bottom: 10px; }
-/* line 757, common.scss */
-body.page- #all #main .post .container #mission .figure .position { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; font-size: 10px; margin-bottom: 4px; }
-/* line 762, common.scss */
-body.page- #all #main .post .container #mission .figure .name { font-size: 14px; }
-/* line 767, common.scss */
 body.page- #all #main .post .container #mission .message { display: inline-block; width: 340px; vertical-align: top; margin-right: 20px; }
-/* line 772, common.scss */
+/* line 749, common.scss */
+body.page- #all #main .post .container #mission .message .figure { display: inline-block; vertical-align: top; text-align: center; width: 240px; float: right; margin-left: 20px; }
+/* line 756, common.scss */
+body.page- #all #main .post .container #mission .message .figure img { width: 240px; margin-bottom: 10px; }
+/* line 760, common.scss */
+body.page- #all #main .post .container #mission .message .figure .position { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; font-size: 10px; margin-bottom: 0px; }
+/* line 765, common.scss */
+body.page- #all #main .post .container #mission .message .figure .name { font-size: 14px; margin-bottom: 0px; }
+/* line 775, common.scss */
 body.page- #all #main .post .container #mission .message p { line-height: 180%; font-size: 14px; }
-/* line 780, common.scss */
+/* line 783, common.scss */
 body.page- #all #main .post .container #officer > ul > li { border-top: 1px solid #cccccc; margin-top: 20px; padding-top: 20px; }
-/* line 784, common.scss */
+/* line 787, common.scss */
 body.page- #all #main .post .container #officer > ul > li .icon { display: inline-block; vertical-align: top; margin-right: 20px; }
-/* line 788, common.scss */
+/* line 791, common.scss */
 body.page- #all #main .post .container #officer > ul > li .icon img { width: 80px; height: 80px; }
-/* line 793, common.scss */
+/* line 796, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile { display: inline-block; vertical-align: top; width: 500px; }
-/* line 797, common.scss */
+/* line 800, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile .position { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; margin-bottom: 10px; font-size: 14px; font-weight: bold; }
-/* line 803, common.scss */
+/* line 806, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile h3 { font-size: 30px; margin-bottom: 14px; font-weight: bold; }
-/* line 811, common.scss */
+/* line 814, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile .links a { padding: 0 5px; border-right: 1px solid #cccccc; }
 
-@-webkit-keyframes heroes_animation { /* line 833, common.scss */
+@-webkit-keyframes heroes_animation { /* line 836, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 836, common.scss */
+  /* line 839, common.scss */
   100% { background-position: 35px 35px; } }
 
-@-moz-keyframes heroes_animation { /* line 833, common.scss */
+@-moz-keyframes heroes_animation { /* line 836, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 836, common.scss */
+  /* line 839, common.scss */
   100% { background-position: 35px 35px; } }
 
-@-ms-keyframes heroes_animation { /* line 833, common.scss */
+@-ms-keyframes heroes_animation { /* line 836, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 836, common.scss */
+  /* line 839, common.scss */
   100% { background-position: 35px 35px; } }
 
-@keyframes heroes_animation { /* line 833, common.scss */
+@keyframes heroes_animation { /* line 836, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 836, common.scss */
+  /* line 839, common.scss */
   100% { background-position: 35px 35px; } }
