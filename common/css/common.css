@@ -355,46 +355,46 @@ body.page- #all #main .post .container #mission h3 { font-family: "Times New Rom
 /* line 748, common.scss */
 body.page- #all #main .post .container #mission .message { display: inline-block; width: 340px; vertical-align: top; margin-right: 20px; }
 /* line 749, common.scss */
-body.page- #all #main .post .container #mission .message .figure { display: inline-block; vertical-align: top; text-align: center; width: 240px; float: right; margin-left: 20px; }
-/* line 756, common.scss */
+body.page- #all #main .post .container #mission .message .figure { display: inline-block; vertical-align: top; text-align: center; float: right; margin-left: 20px; }
+/* line 755, common.scss */
 body.page- #all #main .post .container #mission .message .figure img { width: 240px; margin-bottom: 10px; }
-/* line 760, common.scss */
+/* line 759, common.scss */
 body.page- #all #main .post .container #mission .message .figure .position { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; font-size: 10px; margin-bottom: 0px; }
-/* line 765, common.scss */
+/* line 764, common.scss */
 body.page- #all #main .post .container #mission .message .figure .name { font-size: 14px; margin-bottom: 0px; }
-/* line 775, common.scss */
+/* line 774, common.scss */
 body.page- #all #main .post .container #mission .message p { line-height: 180%; font-size: 14px; }
-/* line 783, common.scss */
+/* line 782, common.scss */
 body.page- #all #main .post .container #officer > ul > li { border-top: 1px solid #cccccc; margin-top: 20px; padding-top: 20px; }
-/* line 787, common.scss */
+/* line 786, common.scss */
 body.page- #all #main .post .container #officer > ul > li .icon { display: inline-block; vertical-align: top; margin-right: 20px; }
-/* line 791, common.scss */
+/* line 790, common.scss */
 body.page- #all #main .post .container #officer > ul > li .icon img { width: 80px; height: 80px; }
-/* line 796, common.scss */
+/* line 795, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile { display: inline-block; vertical-align: top; width: 500px; }
-/* line 800, common.scss */
+/* line 799, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile .position { font-family: "Times New Roman", "YuMincho", YuMincho, "游明朝", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", serif; margin-bottom: 10px; font-size: 14px; font-weight: bold; }
-/* line 806, common.scss */
+/* line 805, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile h3 { font-size: 30px; margin-bottom: 14px; font-weight: bold; }
-/* line 814, common.scss */
+/* line 813, common.scss */
 body.page- #all #main .post .container #officer > ul > li .profile .links a { padding: 0 5px; border-right: 1px solid #cccccc; }
 
-@-webkit-keyframes heroes_animation { /* line 836, common.scss */
+@-webkit-keyframes heroes_animation { /* line 835, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 839, common.scss */
+  /* line 838, common.scss */
   100% { background-position: 35px 35px; } }
 
-@-moz-keyframes heroes_animation { /* line 836, common.scss */
+@-moz-keyframes heroes_animation { /* line 835, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 839, common.scss */
+  /* line 838, common.scss */
   100% { background-position: 35px 35px; } }
 
-@-ms-keyframes heroes_animation { /* line 836, common.scss */
+@-ms-keyframes heroes_animation { /* line 835, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 839, common.scss */
+  /* line 838, common.scss */
   100% { background-position: 35px 35px; } }
 
-@keyframes heroes_animation { /* line 836, common.scss */
+@keyframes heroes_animation { /* line 835, common.scss */
   0% { background-position: 0px 0px; }
-  /* line 839, common.scss */
+  /* line 838, common.scss */
   100% { background-position: 35px 35px; } }
