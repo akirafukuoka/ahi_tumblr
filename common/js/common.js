@@ -10,7 +10,7 @@
       });
       return false;
     });
-    if ($(".page-permalink").length === 0) {
+    if ($(".page-index").length) {
       $(".post").each(function() {
         console.log($(this).find(".caption").height());
         if ($(this).find(".caption").height() >= 300) {
