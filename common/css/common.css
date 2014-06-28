@@ -68,10 +68,10 @@ p { line-height: 140%; }
 .inner { padding: 0 20px; }
 
 /* line 25, common.scss */
-::selection { background: #ffa600; }
+::selection { background: #ffe500; }
 
 /* line 28, common.scss */
-::-moz-selection { background: #ffa600; }
+::-moz-selection { background: #ffe500; }
 
 /* line 32, common.scss */
 a { text-decoration: none; color: #000000; }
@@ -219,7 +219,7 @@ a:active { color: #000000; text-decoration: none; }
 /* line 378, common.scss */
 #all #main .side .box footer { margin: 15px 20px 20px; font-size: 11px; }
 /* line 381, common.scss */
-#all #main .side .box footer a { font-size: 11px; font-weight: bold; color: #ffa600; }
+#all #main .side .box footer a { font-size: 11px; font-weight: bold; color: #ffe500; }
 /* line 391, common.scss */
 #all .pagenation { position: relative; height: 180px; }
 /* line 394, common.scss */
