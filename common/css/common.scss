@@ -625,6 +625,19 @@ body.page-permalink {
             >.date {
               font-size: 60px;
             }
+            >.body {
+              > img {
+
+              }
+              >.caption {
+                margin-top: 20px;
+                font-size: 16px;
+                >p {
+                  font-size: 16px;
+                  line-height: 1.8em;
+                }
+              }
+            }
           }
         }
       }
