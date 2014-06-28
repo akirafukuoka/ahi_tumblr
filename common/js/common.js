@@ -10,6 +10,16 @@
       });
       return false;
     });
+    if ($(".page-permalink").length === 0) {
+      $(".post").each(function() {
+        console.log($(this).find(".caption").height());
+        if ($(this).find(".caption").height() >= 300) {
+          return $(this).find(".more").css({
+            "display": "block"
+          });
+        }
+      });
+    }
   });
 
 }).call(this);
